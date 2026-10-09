@@ -24,12 +24,14 @@ export const fetchNotes = async (
   page: number,
   perPage: number,
   search: string = "",
+  tag: string = "",
 ): Promise<FetchNotesResponse> => {
   const response = await noteService.get<FetchNotesResponse>("/notes", {
     params: {
       page,
       perPage,
       search,
+      ...(tag ? { tag } : {}),
     },
   });
 
