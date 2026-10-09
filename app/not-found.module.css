@@ -8,12 +8,12 @@
   text-align: center;
 }
 
-.main h1 {
+.title {
   margin-bottom: 16px;
   font-size: 32px;
 }
 
-.main p {
+.description {
   margin-bottom: 24px;
 }
 
